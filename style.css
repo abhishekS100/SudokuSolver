@@ -1,0 +1,52 @@
+body {
+    background-image: url(web-1012467.jpg);
+    font-family: Calibri, sans-serif;
+    background-position: center;
+    background-size: cover;
+}
+
+#container {
+    text-align: center
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 2em;
+    margin: 0 auto;
+}
+
+colgroup,
+tbody {
+    border: solid medium;
+}
+
+td {
+    border: solid thin;
+    height: 1.4em;
+    width: 1.4em;
+    text-align: center;
+    padding: 0;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 8px;
+    color: rgb(19, 12, 5);
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+padd {
+    padding-bottom: 100px;
+    text-decoration: rgb(98, 255, 0);
+}
+.foot{
+    display: block;
+    background-color: rgb(163, 185, 54);
+    height: 50px;
+
+}
+.copy{
+    height: 50px;
+    font-size: 15px;
+}
