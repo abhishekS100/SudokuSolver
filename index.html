@@ -18,12 +18,16 @@
 
     <div id="container">
         <div class="logo">
-            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH2qKnYIQ3Eay7pSuh4Ctq6r9gm1a8pENscA&usqp=CAU"
+            <img  src="logo.jpg"
             style="height:100px ; align-items: center; border-radius: 10px;" alt=" Sudoku" />
         </div>
        
 
         <h1 class="padd">SUDOKU SOLVER</h1>
+
+        <input class="audio" type="button" value="PLAY SOUND" onclick="play()" ondblclick="pause()">
+        <audio id="audio" src="playsound.mp3"></audio>
+
 
         <table style="background-color: rgb(60, 247, 247);" id="sudoku-board">
 
@@ -138,8 +142,13 @@
             <button id="solve-button">Solve!</button>
         </div>
         <div>
-            <button id="clear-button">Clear board</button>
+            <button id="clear-button">Clear Board</button>
         </div>
+        <div class="a1"><img  style="border-radius: 10px;"
+            src="A1.jpg" alt="pic"></div>
+        <div class="a2"><img style="border-radius: 10px;" src="A2.jpg" alt="pic"></div>
+        
+        
     </div><br><br><br><br><br>
     <hr>
     <footer class="foot">
@@ -148,7 +157,36 @@
             <h6 class="copy">Copyright &copyAll Rights Reserved!</h6>
         </center>
     </footer>
+
+    
+<script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+    function pause() {
+      var audio = document.getElementById("audio");
+      audio.pause();
+    }
+  </script>
+
+<script>
+
+const audio = new Audio("button-1.mp3");
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
+</script>
+
 </body>
+
+
+
+</script>
 
 <script type="text/javascript">
     document.getElementById("sudoku-board").addEventListener("keyup", function (event) {
